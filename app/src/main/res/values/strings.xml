@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Week1Assignment</string>
+    <string name="action_settings">Settings</string>
+    <string name="pic">Show picture</string>
+    <string name="restore">Restore</string>
+    <string name="output"><b>Hello World!</b> \nWard \nFrancesco \n4/9/18</string>
+
+
+</resources>
