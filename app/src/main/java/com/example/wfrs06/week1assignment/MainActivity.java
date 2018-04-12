@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings)
         {
             this.pic.setVisibility(View.VISIBLE);
-            return true;
         }
         else
+        {
             this.pic.setVisibility(View.INVISIBLE);
+        }
 
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 }
