@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbars="horizontal">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Main2Activity"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:columnCount="6">
+
+        <TextView
+            android:id="@+id/loginName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_marginBottom="64dp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/dog"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:rotation="270"/>
+
+        <TextView
+            android:id="@+id/loginAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/loginOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_row="1"/>
+
+        <EditText
+            android:id="@+id/txtDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:hint="@string/desc"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="5"
+            android:cursorVisible="false"/>
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/up"
+        />
+
+    </GridLayout>
+</ScrollView>
