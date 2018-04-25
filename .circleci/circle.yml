@@ -2,4 +2,3 @@ general:
   branches:
     only:
       - hw3 # list of branches to build
-      
