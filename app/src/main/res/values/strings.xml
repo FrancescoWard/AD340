@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">hw4</string>
+    <string name="author">Ward, Francesco 4/23/18</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="age">Age</string>
+    <string name="login">Login/Register</string>
+    <string name="desc">Describe yourself</string>
+    <string name="up">Upload picture</string>
+    <string name="hello_blank_fragment">Hello World</string>
+    <string name="action_settings">Settings</string>
+</resources>
