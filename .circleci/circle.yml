@@ -1,0 +1,4 @@
+general:
+  branches:
+    only:
+      - hw4 # list of branches to build
