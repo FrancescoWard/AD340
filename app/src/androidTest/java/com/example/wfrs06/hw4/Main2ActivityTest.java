@@ -34,14 +34,13 @@ public class Main2ActivityTest {
             return testIntent;
         }
     };
-/*
+
     @Test
-    public void setsRightMessageBasedOnIntentExtra() {
-        onView(withId(R.id.loginName))
-                .check(matches(withText("Welcome baz")));
+    public void aTest() {
+
 
     }
-
+/*
     @Test
     public void setsRightDefaultImage()
     {
