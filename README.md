@@ -1,0 +1,2 @@
+[![CircleCI](https://circleci.com/gh/FrancescoWard/AD340/tree/hw4.svg?style=svg)](https://circleci.com/gh/FrancescoWard/AD340/tree/hw4)
+[![codecov](https://codecov.io/gh/FrancescoWard/AD340/branch/hw4/graph/badge.svg)](https://codecov.io/gh/FrancescoWard/AD340)
