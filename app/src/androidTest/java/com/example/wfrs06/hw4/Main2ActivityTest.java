@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class Main2ActivityTest {
 
-    /*@Rule
+    @Rule
     public ActivityTestRule<Main2Activity> activityTestRule
             = new ActivityTestRule<Main2Activity>(Main2Activity.class){
         @Override
@@ -34,7 +34,7 @@ public class Main2ActivityTest {
             return testIntent;
         }
     };
-
+/*
     @Test
     public void setsRightMessageBasedOnIntentExtra() {
         onView(withId(R.id.loginName))
