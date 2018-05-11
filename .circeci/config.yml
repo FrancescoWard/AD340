@@ -1,4 +1,7 @@
 version: 2
+
+before_install:
+- yes | sdkmanager "platforms;android-27"
 references:
 
   ## Cache
