@@ -16,6 +16,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            testCoverageEnabled true
+        }
     }
     productFlavors {
     }
@@ -53,3 +56,4 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
+apply from: '../jacoco.gradle'
