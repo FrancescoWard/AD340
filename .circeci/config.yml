@@ -1,4 +1,4 @@
-version: 2
+version: 1
 references:
 
   ## Cache
@@ -216,7 +216,7 @@ jobs:
           destination: /reports/
 
 workflows:
-  version: 2
+  version: 1
   workflow:
     jobs:
       - build_debug
