@@ -167,10 +167,10 @@ jobs:
       - *decode_gcloud_key
       - run:
           name: Set Google Cloud target project
-          command: gcloud config set project ad340
+          command: gcloud config set project ad340-dc836
       - run:
           name: Authenticate with Google Cloud
-          command: gcloud auth activate-service-account firebase-adminsdk-63y6f@ad340hw5.iam.gserviceaccount.com --key-file ${HOME}/client-secret.json
+          command: gcloud auth activate-service-account firebase-adminsdk-jti00@ad340-dc836.iam.gserviceaccount.com --key-file ${HOME}/client-secret.json
       - run:
           name: Echo sha1 variable for debugging
           command: echo ${CIRCLE_SHA1}
