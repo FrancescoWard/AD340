@@ -1,2 +1,2 @@
-# AD340
-For Mobile Development assignments
+[![CircleCI](https://circleci.com/gh/FrancescoWard/AD340/tree/master.svg?style=svg)](https://circleci.com/gh/FrancescoWard/AD340/tree/master)
+[![codecov](https://codecov.io/gh/FrancescoWard/AD340/branch/master/graph/badge.svg)](https://codecov.io/gh/FrancescoWard/AD340)
