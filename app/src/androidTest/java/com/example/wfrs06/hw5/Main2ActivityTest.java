@@ -90,7 +90,7 @@ public class Main2ActivityTest {
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(0, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
-        onView(withText("You liked Palais Garnie")).
+        onView(withText("You liked Mark the King")).
                 inRoot(withDecorView(not(ac.getWindow().getDecorView()))).
                 check(matches(isDisplayed()));
 
@@ -116,7 +116,7 @@ public class Main2ActivityTest {
                 RecyclerViewActions.actionOnItemAtPosition(1, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
 
-        onView(withText("You liked Piazza del Duomo")).
+        onView(withText("You liked Money man Ben")).
                 inRoot(withDecorView(not(ac.getWindow().getDecorView()))).
                 check(matches(isDisplayed()));
 
@@ -141,7 +141,7 @@ public class Main2ActivityTest {
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(2, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
-        onView(withText("You liked Manhattan")).
+        onView(withText("You liked Cool Guy Mike")).
                 inRoot(withDecorView(not(ac.getWindow().getDecorView()))).
                 check(matches(isDisplayed()));
 
@@ -165,7 +165,7 @@ public class Main2ActivityTest {
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(3, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
-        onView(withText("You liked Senso-ji")).
+        onView(withText("You liked Iceman Judah")).
                 inRoot(withDecorView(not(ac.getWindow().getDecorView()))).
                 check(matches(isDisplayed()));
 
@@ -190,7 +190,7 @@ public class Main2ActivityTest {
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(4, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
-        onView(withText("You liked Sultan Ahmed Mosque")).
+        onView(withText("You liked Overachiever Alex")).
                 inRoot(withDecorView(not(ac.getWindow().getDecorView()))).
                 check(matches(isDisplayed()));
 
@@ -215,7 +215,7 @@ public class Main2ActivityTest {
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(5, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
-        onView(withText("You liked Table Mountain")).
+        onView(withText("You liked Hayden the Wrestler")).
                 inRoot(withDecorView(not(ac.getWindow().getDecorView()))).
                 check(matches(isDisplayed()));
 
