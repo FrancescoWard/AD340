@@ -247,8 +247,6 @@ public class Main2ActivityTest {
 
         onView(withId(R.id.max_distance_search)).perform(scrollTo(), typeText("10"));
 
-        //onView(withId(R.id.account_type_public)).perform(scrollTo(), )
-
         onView(withId(R.id.age_range_from)).perform(scrollTo(), typeText("30"));
         onView(withId(R.id.age_range_to)).perform(scrollTo(), typeText("35"));
     }

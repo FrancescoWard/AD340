@@ -18,6 +18,7 @@ package com.example.wfrs06.hw5;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -76,6 +77,11 @@ public class TileContentFragment extends Fragment {
         mAgePickTo = view.findViewById(R.id.age_range_to);
         mBtnUpdateDb = view.findViewById(R.id.btnUpdateDb);
 
+        if (null != savedInstanceState)
+        {
+            mTimePicker.setHour(savedInstanceState.getInt("spinnerHour"));
+            mTimePicker.setMinute(savedInstanceState.getInt("spinnerMinute"));
+        }
 
         mTimePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
@@ -84,37 +90,7 @@ public class TileContentFragment extends Fragment {
                 mMinute = minute;
             }
         });
-/*
-        mNumPick.setMinValue(1);
-        mNumPick.setMaxValue(200);
 
-        mAgePickFrom.setMinValue(1);
-        mAgePickFrom.setMaxValue(150);
-
-        mAgePickTo.setMinValue(1);
-        mAgePickTo.setMaxValue(150);
-
-        mNumPick.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-            @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                mNumPickVal = mNumPick.getValue();
-            }
-        });
-
-        mAgePickFrom.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-            @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                mAgeRangeFrom = mAgePickFrom.getValue();
-            }
-        });
-
-        mAgePickTo.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-            @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                mAgeRangeTo = mAgePickTo.getValue();
-            }
-        });
-*/
         mBtnUpdateDb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,7 +106,9 @@ public class TileContentFragment extends Fragment {
             }
         });
 
-        new GetSettingsTask(this, 0).execute();
+        if (null == savedInstanceState) {
+            new GetSettingsTask(this, 0).execute();
+        }
 
         return view;
     }
@@ -286,4 +264,10 @@ public class TileContentFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        outState.putInt("spinnerHour",mHour);
+        outState.putInt("spinnerMinute",mMinute);
+        super.onSaveInstanceState(outState);
+    }
 }
