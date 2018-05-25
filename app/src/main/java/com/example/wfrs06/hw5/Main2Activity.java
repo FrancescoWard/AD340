@@ -117,29 +117,5 @@ public class Main2Activity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
 
     }
-
-    private static class SetUserTask extends AsyncTask<Void, Void, Settings> {
-
-        private WeakReference<Activity> weakActivity;
-        private Settings settings;
-
-        public SetUserTask(Activity activity, Settings settings) {
-            weakActivity = new WeakReference<>(activity);
-            this.settings = settings;
-        }
-
-        @Override
-        protected Settings doInBackground(Void... voids) {
-            Activity activity = weakActivity.get();
-            if(activity == null) {
-                return null;
-            }
-
-            AppDatabase db = AppDbSingleton.getDatabase(activity.getApplicationContext());
-
-            //db.settingsDao().insertAll(user);
-            return settings;
-        }
-    }
 }
 

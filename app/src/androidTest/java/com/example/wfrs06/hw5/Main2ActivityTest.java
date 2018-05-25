@@ -249,5 +249,21 @@ public class Main2ActivityTest {
 
         onView(withId(R.id.age_range_from)).perform(scrollTo(), typeText("30"));
         onView(withId(R.id.age_range_to)).perform(scrollTo(), typeText("35"));
+
+        onView(withId(R.id.btnUpdateDb)).perform(scrollTo(), click());
+    }
+
+    @Test
+    public void updateSettings()
+    {
+        onView(withId(R.id.viewpager)).perform(swipeLeft());
+        onView(withId(R.id.daily_matches_reminder_time)).perform(scrollTo(), PickerActions.setTime(6,0));
+
+        onView(withId(R.id.max_distance_search)).perform(scrollTo(), typeText("15"));
+
+        onView(withId(R.id.age_range_from)).perform(scrollTo(), typeText("25"));
+        onView(withId(R.id.age_range_to)).perform(scrollTo(), typeText("40"));
+
+        onView(withId(R.id.btnUpdateDb)).perform(scrollTo(), click());
     }
 }
