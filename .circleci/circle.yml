@@ -1,0 +1,4 @@
+general:
+  branches:
+    only:
+      - hw8 # list of branches to build

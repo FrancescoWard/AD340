@@ -1,0 +1,52 @@
+{
+  "matches" : {
+    "-LBUnGOjj3Nr5DXhI-j_" : {
+      "imageUrl": "https://i.imgur.com/fF3Iiih.jpg",
+      "liked" : false,
+      "name" : "Cool Guy Mike",
+      "uid" : "-LBUnGOjj3Nr5DXhI-j_",
+      "lat": "47.620497",
+      "longitude": "-122.349059"
+    },
+    "-LBUngosfmAxrQDx1xmH" : {
+      "imageUrl": "https://i.imgur.com/kobQVOD.jpg",
+      "liked" : true,
+      "name" : "Mark the King",
+      "uid" : "-LBUngosfmAxrQDx1xmH",
+      "lat": "47.604634",
+      "longitude": "-122.331101"
+    },
+    "-LBUnncHl-pz__UNHMyF" : {
+      "imageUrl": "https://i.imgur.com/z4OKVlA.jpg",
+      "liked" : false,
+      "name" : "Overachiever Alex",
+      "uid" : "-LBUnncHl-pz__UNHMyF",
+      "lat": "47.699254",
+      "longitude": "-122.333896"
+    },
+    "-LBUnwSPtSlyhvVHNbPb" : {
+      "imageUrl": "https://i.imgur.com/0Sycoon.jpg",
+      "liked" : false,
+      "name" : "Iceman Judah",
+      "uid" : "-LBUnwSPtSlyhvVHNbPb",
+      "lat": "47.610550",
+      "longitude": "-122.342796"
+    },
+    "-LBUo1JZiL1bZi2xxBHn" : {
+      "imageUrl": "https://i.imgur.com/idPP9QQ.jpg",
+      "liked" : true,
+      "name" : "Hayden the Wrestler",
+      "uid" : "-LBUo1JZiL1bZi2xxBHn",
+      "lat": "47.609349",
+      "longitude": "-122.325362"
+    },
+    "-LBUoAWHzXyxw5CQr5iV" : {
+      "imageUrl": "https://i.imgur.com/a3omF7q.jpg",
+      "liked" : false,
+      "name" : "Money man Ben",
+      "uid" : "-LBUoAWHzXyxw5CQr5iV",
+      "lat": "34.050769",
+      "longitude": "-118.254149"
+    }
+  }
+}
