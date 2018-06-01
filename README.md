@@ -1,2 +1,2 @@
-[![CircleCI](https://circleci.com/gh/FrancescoWard/AD340/tree/master.svg?style=svg)](https://circleci.com/gh/FrancescoWard/AD340/tree/master)
-[![codecov](https://codecov.io/gh/FrancescoWard/AD340/branch/master/graph/badge.svg)](https://codecov.io/gh/FrancescoWard/AD340)
+[![CircleCI](https://circleci.com/gh/FrancescoWard/AD340/tree/hw8.svg?style=svg)](https://circleci.com/gh/FrancescoWard/AD340/tree/hw8)
+[![codecov](https://codecov.io/gh/FrancescoWard/AD340/branch/hw8/graph/badge.svg)](https://codecov.io/gh/FrancescoWard/AD340)
