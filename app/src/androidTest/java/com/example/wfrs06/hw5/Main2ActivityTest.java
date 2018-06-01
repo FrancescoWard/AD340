@@ -55,7 +55,7 @@ public class Main2ActivityTest {
         onView(withId(R.id.img))
                 .check(matches(isDisplayed()));
     }
-
+/*
     @Test
     public void canSwipeLeft()
     {
@@ -79,16 +79,16 @@ public class Main2ActivityTest {
                 .perform(swipeRight());
 
     }
-
+*/
     @Test
     public void testToast1() {
         //#1
         Main2Activity ac = activityTestRule.getActivity();
 
+        onView(withText("Matches")).perform(click());
+/*
         onView(withId(R.id.viewpager)).perform(swipeLeft());
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
-/*
         onView(withId(R.id.locationControllerNetwork)).perform(scrollTo(),click());
 
         ac.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
