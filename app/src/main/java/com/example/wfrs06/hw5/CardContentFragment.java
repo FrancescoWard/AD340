@@ -180,25 +180,29 @@ public class CardContentFragment extends Fragment {
 
                             //check distance here
                             //Only display picture if within 10 mile radius
-                            Location targetLocation = new Location("");
-                            targetLocation.setLatitude(Double.parseDouble(gObjs.get(count)[5].toString()));
-                            targetLocation.setLongitude(Double.parseDouble(gObjs.get(count)[4].toString()));
+                            try {
+                                Location targetLocation = new Location("");
+                                targetLocation.setLatitude(Double.parseDouble(gObjs.get(count)[5].toString()));
+                                targetLocation.setLongitude(Double.parseDouble(gObjs.get(count)[4].toString()));
 
-                            Location myLocation = new Location("");
-                            myLocation.setLatitude(latitudeNetwork);
-                            myLocation.setLongitude(longitudeNetwork);
+                                Location myLocation = new Location("");
+                                myLocation.setLatitude(latitudeNetwork);
+                                myLocation.setLongitude(longitudeNetwork);
 
-                            float distanceInMeters =  targetLocation.distanceTo(myLocation);
-                            Double metersPer10Miles = Double.valueOf(1609.34 * 10);
-                            int isWithinRange = Double.compare(distanceInMeters,metersPer10Miles);
+                                float distanceInMeters = targetLocation.distanceTo(myLocation);
+                                Double metersPer10Miles = Double.valueOf(1609.34 * 10);
+                                int isWithinRange = Double.compare(distanceInMeters, metersPer10Miles);
 
-                            if (isWithinRange < 0)
+                                if (isWithinRange < 0) {
+                                    gPlacesDesc[count] = gObjs.get(count)[0].toString();
+                                    mLatitudes.add(gObjs.get(count)[5].toString());
+                                    mLongitudes.add(gObjs.get(count)[4].toString());
+                                    gPlacePicturesURLs.add(gObjs.get(count)[2].toString());
+                                    gUIDs.add(gObjs.get(count)[1].toString());
+                                }
+                            }catch (Exception e)
                             {
-                                gPlacesDesc[count] = gObjs.get(count)[0].toString();
-                                mLatitudes.add(gObjs.get(count)[5].toString());
-                                mLongitudes.add(gObjs.get(count)[4].toString());
-                                gPlacePicturesURLs.add(gObjs.get(count)[2].toString());
-                                gUIDs.add(gObjs.get(count)[1].toString());
+
                             }
 
                             count++;
