@@ -123,9 +123,9 @@ public class Main2ActivityTest {
         //#2
         Main2Activity ac = activityTestRule.getActivity();
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
+        onView(withText("Matches")).perform(click());
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
+        //onView(withId(R.id.viewpager)).perform(swipeLeft());
 /*
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(1, myMatcher.clickChildViewWithId(R.id.favorite_button)));
@@ -150,10 +150,11 @@ public class Main2ActivityTest {
         //#3
         Main2Activity ac = activityTestRule.getActivity();
 
+        onView(withText("Matches")).perform(click());
+
+        /*
         onView(withId(R.id.viewpager)).perform(swipeLeft());
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
-/*
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(2, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
@@ -175,9 +176,9 @@ public class Main2ActivityTest {
     public void testToast4() {
         Main2Activity ac = activityTestRule.getActivity();
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
+        onView(withText("Matches")).perform(click());
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
+
 
         /*
         onView(withId(R.id.my_recycler_view)).perform(
@@ -202,11 +203,12 @@ public class Main2ActivityTest {
         //#5
         Main2Activity ac = activityTestRule.getActivity();
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
-
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
+        onView(withText("Matches")).perform(click());
 
         /*
+        onView(withId(R.id.viewpager)).perform(swipeLeft());
+
+
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(4, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
@@ -229,10 +231,11 @@ public class Main2ActivityTest {
         //#6
         Main2Activity ac = activityTestRule.getActivity();
 
+        onView(withText("Matches")).perform(click());
+
+        /*
         onView(withId(R.id.viewpager)).perform(swipeLeft());
 
-        onView(withId(R.id.viewpager)).perform(swipeLeft());
-/*
         onView(withId(R.id.my_recycler_view)).perform(
                 RecyclerViewActions.actionOnItemAtPosition(5, myMatcher.clickChildViewWithId(R.id.favorite_button)));
 
